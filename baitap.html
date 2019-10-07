@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<body>
+<form>
+    Nhập số thứ tự
+    <br>
+    <input type="text" id="english"/>
+    <p>
+        <input type="button" onclick="main()">Tìm Kiếm</input>
+    </p>
+    <input type="text" id="vietnamese">
+</form>
+<script>
+    function main() {
+        let Tom = ["cat", "dog", "hello", "goodbye"];
+        let Dragon = ["mèo", "chó", "xinchào", "tạmbiệt"];
+        y = document.getElementById("english").value;
+        for (i = 0; i < Tom.length; i++) {
+
+            if (y == (Tom[i])) {
+                kt = Dragon[i];
+                break;
+            }
+        }
+        if (i == Tom.length) alert("khong tim thay");
+        else document.getElementById("vietnamese").value = kt;
+    }
+</script>
+</body>
+</html>
